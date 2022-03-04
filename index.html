@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Silvana Ruiz - Get to know me!</title>
+    <title>Bubble</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +13,24 @@
     />
     <link rel=preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet" />
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      function myFunction() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+    </script>
   </head>
+
   <body>
     <header>
       <h1 class="title">Bubble</h1>
@@ -25,56 +42,66 @@
         </nav>
       </div>
     </header>
+    <div class="progress-container header">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+
     <main>
-      <div class="contentpage">
-        <div class="mainsection">
-          <div class="options">
-            <h3>Options</h3>
-            <a href="#">Sign up for emails</a>
-            <a href="#">What is Bubble?</a>
-            <a href="#">How to write a post?</a>
-            <a href="#">How to upload a photo?</a>
-            <h3>Stats</h3>
-            <p>30,450 visitors per month</p>
-            <p>4,023,455 page views</p>
-          </div>
-          <div class="feed">
-            <p class="date">Saturday, October 4, 2011</p>
-            <div class="post">
-                <h3 class="username">CupcakeLover</h3>
-                <div class="posttext">
-                    <p class="mood">Mood: joyful</p>
-                    <p class="message">
-                    I just bought my first car! Hopefully I can get to drive it
-                    around soon.</p>
-                    <p class="postdate">04/10/2010</p>
-                </div>
-            </div>
-            <div class="post">
-                <h3 class="username">CrazyDolphin</h3>
-                <div class="posttext">
-                    <p class="mood">Mood: panicked</p>
-                    <p class="message">Rushing to the supermarket for potatoes.</p>
-                    <p class="postdate">07/06/2010</p>
-                </div>
-              
-            </div>
-            <div class="post">
-                <h3 class="username">greygreen</h3>
-                <div class="posttext">
-                    <p class="mood">Mood: happy</p>
-                    <p class="message">Need fave color: blue!</p>
-                    <p class="postdate">02/01/2010</p>
-                </div>
+      <div class="mainsection">
+        <div class="options">
+          <h3>Options</h3>
+          <a href="#">Sign up for emails</a>
+          <a href="#">What is Bubble?</a>
+          <a href="#">How to write a post?</a>
+          <a href="#">How to change your username?</a>
+          <h3>Stats</h3>
+          <p>30,450 visitors per month</p>
+          <p>4,023,455 page views</p>
+        </div>
+
+        <div class="feed">
+          <p class="date">Saturday, October 4, 2011</p>
+          <div class="post">
+            <h3 class="username">CupcakeLover</h3>
+            <div class="posttext">
+              <p class="mood">Mood: joyful</p>
+              <p class="message">
+                I just bought my first car! Hopefully I can get to drive it
+                around soon.
+              </p>
+              <p class="postdate">04/10/2010</p>
             </div>
           </div>
-          <div>
-              
+          <div class="post">
+            <h3 class="username">CrazyDolphin</h3>
+            <div class="posttext">
+              <p class="mood">Mood: panicked</p>
+              <p class="message">Rushing to the supermarket for potatoes.</p>
+              <p class="postdate">07/06/2010</p>
+            </div>
+          </div>
+          <div class="post">
+            <h3 class="username">greygreen</h3>
+            <div class="posttext">
+              <p class="mood">Mood: happy</p>
+              <p class="message">Need fave color: blue!</p>
+              <p class="postdate">02/01/2010</p>
+            </div>
           </div>
         </div>
 
+        <div>
+          <div class="mybutton">
+            <button>Write a Post</button>
+          </div>
+          <div class="profile">
+            <h3 class="profileTitle">Profile</h3>
+            <img src="img/user.png" alt="user photo" />
+            <p>Username: puppyLover</p>
+            <p>Bio: Hello world!</p>
+          </div>
+        </div>
       </div>
     </main>
-
   </body>
 </html>
