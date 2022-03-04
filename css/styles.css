@@ -13,13 +13,13 @@
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
-  background: var(--lightblue);
+  background: var(--pink);
 }
 /*Changing the color of text selection*/
 ::selection {
   /* Code for the other browser*/
   color: white;
-  background: var(--lightblue);
+  background: var(--pink);
 }
 
 html {
@@ -48,20 +48,13 @@ body {
 
 /**Typography**/
 .title {
-  width:  20rem; /* 1 rem = 10 px*/
+  width: 20rem; /* 1 rem = 10 px*/
   font-weight: normal;
   font-size: 4rem;
 
   text-align: left;
   margin: 0 auto;
-  margin-left:1rem;
-
-}
-
-.title-h2 {
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  text-shadow: 2px 2px 3px black;
+  margin-left: 1rem;
 }
 
 h3 {
@@ -73,20 +66,20 @@ h2,
 h3 {
   text-align: center;
   justify-content: center;
-  margin-top: 5rem;
   margin-bottom: 1rem;
 }
 
 header {
   display: flex;
-  flex-direction:row;
-  align-items:center;
+  flex-direction: row;
+  align-items: center;
 }
 
 /**Navigation menu**/
 .nav-background {
   background-color: rgb(153, 153, 153);
-  width:100%;
+  width: 100%;
+  
 }
 
 .menu {
@@ -113,7 +106,7 @@ header {
   padding-left: 5rem;
   padding-right: 5rem;
   width: 100%;
-  outline:solid;
+  outline: solid;
   outline-color: black;
 }
 
@@ -122,39 +115,95 @@ header {
   color: black;
 }
 
-.mainsection {
+/**Content Page**/
+.contentpage {
   display:flex;
   flex-direction:row;
-  justify-content: flex-end;
- 
+  
 }
 
 
 /**FEED**/
-.post {
-  background-color:#779ada;
-  border-radius:1rem;
- 
- 
-  padding-bottom:2rem;
+.mainsection {
+  display: flex;
+  flex-direction: row;
   
-  width:100%;
-  margin-right:10rem;
+}
+
+.feed {
+  display: flex;
+  flex-direction:column;
+}
+
+.post {
+  background-color: #779ada;
+  border-radius: 1rem;
+
+  padding-bottom: 2rem;
+
+  width: 140%;
+  outline: solid;
+  outline-color:black;
+  align-items:center;
+  margin-left:10rem;
+  margin-bottom: 2rem;
 
 }
 
-h3 {
+.post h3 {
   background-color: var(--blue);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  color:white;
+  margin-top:0;
 }
 
+.date {
+  
+  margin-top:3rem;
+  margin-bottom:2rem;
+  font-weight:bold;
+  margin-left:2rem;
+}
+
+.mood {
+  font-size:1.9rem;
+  font-weight:bold;
+}
+
+.message {
+  font-size:1.7rem;
+  
+}
+
+.posttext {
+  margin-left:3rem;
+}
 /**OPTIONS**/
 .options {
-  
   display: flex;
-  flex-direction:column;
-  width: 300px;
+  flex-direction: column;
+  width: 180px;
   
+  
+  background-color: lightblue;
+  padding-bottom:2rem;
+ 
+}
 
+.options h3 {
+  margin: 0;
+  background-color: var(--blue);
+  color:white;
+ 
+}
+
+.options a {
+  margin-bottom:2rem;
+  color: blue;
+
+}
+
+.options p {
+  margin-bottom:0;
 }
