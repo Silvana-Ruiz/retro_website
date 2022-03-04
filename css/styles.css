@@ -1,0 +1,123 @@
+/* :root son las variables de css o atributos*/
+:root {
+  --blue: #07004d;
+  --greenblue: #42e2b8;
+  --beige: #f3dfbf;
+  --pink: #db8d92;
+  --lightblue: #779ada;
+  --purple: #cda7e4;
+  --grey: #d3cbcb62;
+}
+
+/*Changing the color of text selection*/
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: var(--lightblue);
+}
+/*Changing the color of text selection*/
+::selection {
+  /* Code for the other browser*/
+  color: white;
+  background: var(--lightblue);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  /*
+    scroll-snap-type: y mandatory;
+    scroll-behavior:smooth;*/ /*Smooth scroll effect without using javascript*/
+}
+
+/*Box Model code snippet*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /* 1rem = 10px*/
+  font-family: "Spectral", serif;
+
+  background-color: rgb(240, 240, 172);
+  margin: 0px;
+  color: black;
+}
+
+/**Typography**/
+.title {
+  width:  20rem; /* 1 rem = 10 px*/
+  font-weight: normal;
+  font-size: 4rem;
+
+  text-align: left;
+  margin: 0 auto;
+  margin-left:1rem;
+
+}
+
+.title-h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 3px black;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+/**Navigation menu**/
+.nav-background {
+  background-color: rgb(153, 153, 153);
+  width:100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .button {
+    width: auto;
+  }
+}
+
+.menu a {
+  text-align: center;
+  color: blue;
+  font-size: 2.1rem;
+  font-weight: normal;
+  padding: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 100%;
+  outline:solid;
+  outline-color: black;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: black;
+}
