@@ -122,14 +122,39 @@ header {
   color: black;
 }
 
+.mainsection {
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+ 
+}
+
+
 /**FEED**/
 .post {
   background-color:#779ada;
   border-radius:1rem;
-  max-width: 70%;
-  margin: 0 auto;
+ 
+ 
+  padding-bottom:2rem;
+  
+  width:100%;
+  margin-right:10rem;
+
 }
 
 h3 {
   background-color: var(--blue);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/**OPTIONS**/
+.options {
+  
+  display: flex;
+  flex-direction:column;
+  width: 300px;
+  
+
 }
