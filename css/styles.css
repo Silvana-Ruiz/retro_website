@@ -1,6 +1,6 @@
 /* :root son las variables de css o atributos*/
 :root {
-  --blue: #07004d;
+  --blue: #100688;
   --greenblue: #42e2b8;
   --beige: #f3dfbf;
   --pink: #db8d92;
@@ -120,4 +120,16 @@ header {
 .menu a:hover {
   background-color: white;
   color: black;
+}
+
+/**FEED**/
+.post {
+  background-color:#779ada;
+  border-radius:1rem;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+h3 {
+  background-color: var(--blue);
 }
